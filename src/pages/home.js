@@ -1,4 +1,4 @@
-export { makeHeader };
+export { makeHeader, makeHomeContent };
 
 const contentContainer = document.querySelector("#content");
 
@@ -21,4 +21,27 @@ function makeHeader() {
   homeBtn.textContent = "Home";
   menuBtn.textContent = "Menu";
   aboutBtn.textContent = "About";
+}
+
+function makeHomeContent() {
+  const homeContentContainer = document.createElement("div");
+  const homeContentTitle = document.createElement("div");
+  const homeContentImgContainer = document.createElement("div");
+  const homeContentImg = document.createElement("img");
+  const homeContentBlurb = document.createElement("div");
+
+  homeContentContainer.classList.add("homeContentContainer");
+  homeContentTitle.classList.add("homeContentTitle");
+  homeContentImgContainer.classList.add("homeContentImgContainer");
+  homeContentImg.classList.add("homeContentImg");
+  homeContentBlurb.classList.add("homeContentBlurb");
+
+  contentContainer.appendChild(homeContentContainer);
+  homeContentContainer.appendChild(homeContentTitle);
+  homeContentContainer.appendChild(homeContentImgContainer);
+  homeContentContainer.appendChild(homeContentImg);
+  homeContentContainer.appendChild(homeContentBlurb);
+
+  homeContentTitle.innerHTML = "<h1>Puzzles Bar & Grill</h1>";
+  homeContentImg.src = "./puzzles.jpg";
 }

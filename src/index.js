@@ -1,5 +1,6 @@
-import { makeHeader } from "./pages/home.js";
+import { makeHeader, makeHomeContent } from "./pages/home.js";
 
 makeHeader();
+makeHomeContent();
 
 console.log("Hello");
