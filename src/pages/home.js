@@ -1,6 +1,6 @@
 export { makeHeader };
 
-const contentContainer = getElementByID("content");
+const contentContainer = document.querySelector("#content");
 
 function makeHeader() {
   const header = document.createElement("div");
@@ -22,5 +22,3 @@ function makeHeader() {
   menuBtn.textContent = "Menu";
   aboutBtn.textContent = "About";
 }
-
-console.log("Hello");
