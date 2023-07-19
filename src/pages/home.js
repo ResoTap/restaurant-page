@@ -1,3 +1,5 @@
+export { makeHeader };
+
 const contentContainer = getElementByID("content");
 
 function makeHeader() {
@@ -20,3 +22,5 @@ function makeHeader() {
   menuBtn.textContent = "Menu";
   aboutBtn.textContent = "About";
 }
+
+console.log("Hello");
