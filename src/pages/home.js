@@ -1,3 +1,4 @@
+import puzzles from "./assets/puzzles.jpg";
 export { makeHeader, makeHomeContent };
 
 const contentContainer = document.querySelector("#content");
