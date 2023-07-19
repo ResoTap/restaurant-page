@@ -9,7 +9,7 @@ function makeHeader() {
   const aboutBtn = document.createElement("button");
 
   header.classList.add("headerContainer");
-  homeBtn.classList.add("bomeBtn");
+  homeBtn.classList.add("homeBtn");
   menuBtn.classList.add("menuBtn");
   aboutBtn.classList.add("aboutBtn");
 
