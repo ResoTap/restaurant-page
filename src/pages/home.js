@@ -28,21 +28,21 @@ function makeHomeContent() {
   const homeContentContainer = document.createElement("div");
   const homeContentTitle = document.createElement("div");
   const homeContentImgContainer = document.createElement("div");
-  const homeContentImg = document.createElement("img");
+  const puzzlesImg = document.createElement("img");
   const homeContentBlurb = document.createElement("div");
 
   homeContentContainer.classList.add("homeContentContainer");
   homeContentTitle.classList.add("homeContentTitle");
   homeContentImgContainer.classList.add("homeContentImgContainer");
-  homeContentImg.classList.add("homeContentImg");
+  puzzlesImg.classList.add("puzzlesImg");
   homeContentBlurb.classList.add("homeContentBlurb");
 
   contentContainer.appendChild(homeContentContainer);
   homeContentContainer.appendChild(homeContentTitle);
   homeContentContainer.appendChild(homeContentImgContainer);
-  homeContentContainer.appendChild(homeContentImg);
+  homeContentContainer.appendChild(puzzlesImg);
   homeContentContainer.appendChild(homeContentBlurb);
 
   homeContentTitle.innerHTML = "<h1>Puzzles Bar & Grill</h1>";
-  homeContentImg.src = "./puzzles.jpg";
+  puzzlesImg.src = puzzles;
 }
