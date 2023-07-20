@@ -1,4 +1,3 @@
-import puzzles from "./assets/puzzles.jpg";
 export { makeHeader, makeHomeContent };
 
 const contentContainer = document.querySelector("#content");
@@ -44,5 +43,4 @@ function makeHomeContent() {
   homeContentContainer.appendChild(homeContentBlurb);
 
   homeContentTitle.innerHTML = "<h1>Puzzles Bar & Grill</h1>";
-  puzzlesImg.src = puzzles;
 }
