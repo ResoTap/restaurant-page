@@ -1,3 +1,4 @@
 .homeContentContainer {
   background: url("./assets/puzzles.jpg");
+  background-repeat: no-repeat;
 }
