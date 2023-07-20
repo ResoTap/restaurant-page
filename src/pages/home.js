@@ -1,4 +1,5 @@
 export { makeHeader, makeHomeContent };
+import Puzzles from "../assets/puzzles.jpg";
 
 const contentContainer = document.querySelector("#content");
 
@@ -27,7 +28,8 @@ function makeHomeContent() {
   const homeContentContainer = document.createElement("div");
   const homeContentTitle = document.createElement("div");
   const homeContentImgContainer = document.createElement("div");
-  const puzzlesImg = document.createElement("img");
+  const puzzlesImg = new Image();
+  puzzlesImg.src = Puzzles;
   const homeContentBlurb = document.createElement("div");
 
   homeContentContainer.classList.add("homeContentContainer");
