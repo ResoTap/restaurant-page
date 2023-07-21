@@ -1,4 +1,4 @@
-export { makeHeader, makeHomeContent };
+export { makeHeader, makeHomeContent, makeFooter };
 import Puzzles from "../assets/puzzles.jpg";
 
 function makeHeader() {
@@ -48,4 +48,17 @@ function makeHomeContent() {
   puzzlesImg.src = Puzzles;
   homeContentBlurb.textContent =
     'Welcome to your favorite neighborhood establishment to drink, be merry, and make memories! Looking for a drink? Food? A friendly face? Come on down to Puzzles where the only question you will be left with is... "Why is the name of this place Puzzles?';
+}
+
+function makeFooter() {
+  const footer = document.createElement("div");
+  const footerContent = document.createElement("div");
+
+  footer.classList.add("footer");
+  footerContent.classList.add("footerContent");
+
+  content.appendChild(footer);
+  footer.appendChild(footerContent);
+
+  footerContent.innerHTML = "<em>What up?</em>";
 }
