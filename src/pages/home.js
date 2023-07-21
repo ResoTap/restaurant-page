@@ -1,7 +1,8 @@
 export { makeHeader, makeHomeContent, makeFooter };
 import Puzzles from "../assets/puzzles.jpg";
 
-export const content = document.createElement("div");
+const content = document.createElement("div");
+export default content;
 
 function makeHeader() {
   const header = document.createElement("div");
