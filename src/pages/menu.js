@@ -7,7 +7,7 @@ import image4 from "../assets/pasta.jpg";
 import image5 from "../assets/salad.jpg";
 export { makeMenu };
 
-const menuImages = [image0, image1, image2, image3, image4, image5];
+let menuImages = [image0, image1, image2, image3, image4, image5];
 
 function makeMenu() {
   const menuContent = document.createElement("div");
@@ -15,13 +15,12 @@ function makeMenu() {
   content.appendChild(menuContent);
   for (let i = 0; i < 6; i++) {
     const menuItem = document.createElement("div");
-    menuItem.classList.add("menuItem");
+    menuItem.classList.add(`menuItem${i}`);
     menuContent.appendChild(menuItem);
-    for (const item of menuImages) {
-      const img = new Image();
-      img.src = item;
-      img.classList.add(`img${[i]}`);
-      menuItem.appendChild(img);
-    }
+
+    const img = new Image();
+    img.src = menuImages[i];
+    img.classList.add(`img${[i]}`);
+    menuItem.appendChild(img);
   }
 }
