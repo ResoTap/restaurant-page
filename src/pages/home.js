@@ -1,12 +1,13 @@
 export { makeHeader, makeHomeContent, makeFooter };
 import Puzzles from "../assets/puzzles.jpg";
 
+export const content = document.createElement("div");
+
 function makeHeader() {
   const header = document.createElement("div");
   const homeBtn = document.createElement("button");
   const menuBtn = document.createElement("button");
   const aboutBtn = document.createElement("button");
-  const content = document.createElement("div");
 
   header.classList.add("headerContainer");
   homeBtn.classList.add("homeBtn");
