@@ -22,5 +22,26 @@ function makeMenu() {
     img.src = menuImages[i];
     img.classList.add(`img${[i]}`);
     menuItem.appendChild(img);
+
+    const menuItemText = document.createElement("div");
+    menuItemText.classList.add(`menuItemText${[i]}`);
+    menuItem.appendChild(menuItemText);
   }
+  const menuItemText0 = document.querySelector(".menuItemText0");
+  menuItemText0.innerHTML = "Burger and fries.";
+
+  const menuItemText1 = document.querySelector(".menuItemText1");
+  menuItemText1.innerHTML = "Chicken Strips.";
+
+  const menuItemText2 = document.querySelector(".menuItemText2");
+  menuItemText2.innerHTML = "Grilled Cheese.";
+
+  const menuItemText3 = document.querySelector(".menuItemText3");
+  menuItemText3.innerHTML = "Lasagna.";
+
+  const menuItemText4 = document.querySelector(".menuItemText4");
+  menuItemText4.innerHTML = "Pasta.";
+
+  const menuItemText5 = document.querySelector(".menuItemText5");
+  menuItemText5.innerHTML = "Salad.";
 }
