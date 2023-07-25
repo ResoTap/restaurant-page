@@ -17,4 +17,10 @@ homeBtn.addEventListener("click", () => {
   makeFooter();
 });
 
+aboutBtn.addEventListener("click", () => {
+  makeHeader();
+  makeAbout();
+  makeFooter();
+});
+
 console.log("Hello");
