@@ -23,4 +23,10 @@ aboutBtn.addEventListener("click", () => {
   makeFooter();
 });
 
+menuBtn.addEventListener("click", () => {
+  makeHeader();
+  makeMenu();
+  makeFooter();
+});
+
 console.log("Hello");
