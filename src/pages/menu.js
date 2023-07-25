@@ -15,7 +15,7 @@ function makeMenu() {
   content.appendChild(menuContent);
   for (let i = 0; i < 6; i++) {
     const menuItem = document.createElement("div");
-    menuItem.classList.add(`menuItem${i}`);
+    menuItem.setAttribute("id", `menuItem${i}`);
     menuContent.appendChild(menuItem);
 
     const img = new Image();

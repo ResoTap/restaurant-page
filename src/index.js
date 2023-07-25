@@ -5,11 +5,12 @@ import { makeAbout } from "./pages/about.js";
 import { homeBtn, aboutBtn, menuBtn } from "./pages/home.js";
 import content from "./pages/home.js";
 
-document.addEventListener("DOMContentLoaded", () => {
+window.onload = () => {
+  content.innerHTML = "";
   makeHeader();
   makeHomeContent();
   makeFooter();
-});
+};
 
 homeBtn.addEventListener("click", () => {
   content.innerHTML = "";

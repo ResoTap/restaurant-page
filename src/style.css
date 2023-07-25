@@ -1,4 +1,36 @@
+body {
+  background-color: white;
+}
+
 .homeContentContainer {
   background: url("./assets/puzzles.jpg");
   background-repeat: no-repeat;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.headerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.homeContentTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.homeContentImgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.menuContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
