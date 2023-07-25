@@ -33,4 +33,12 @@ button {
 .menuContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gr
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
