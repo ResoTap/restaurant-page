@@ -4,11 +4,12 @@ import Puzzles from "../assets/puzzles.jpg";
 const content = document.createElement("div");
 export default content;
 
+export const homeBtn = document.createElement("button");
+export const menuBtn = document.createElement("button");
+export const aboutBtn = document.createElement("button");
+
 function makeHeader() {
   const header = document.createElement("div");
-  const homeBtn = document.createElement("button");
-  const menuBtn = document.createElement("button");
-  const aboutBtn = document.createElement("button");
 
   header.classList.add("headerContainer");
   homeBtn.classList.add("homeBtn");

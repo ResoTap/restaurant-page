@@ -3,10 +3,18 @@ import "./style.css";
 import printMe from "./print.js";
 import { makeMenu } from "./pages/menu.js";
 import { makeAbout } from "./pages/about.js";
+import { homeBtn, aboutBtn, menuBtn } from "./pages/home.js";
 
-makeHeader();
-makeAbout();
-makeFooter();
-printMe();
+document.addEventListener("DOMContentLoaded", () => {
+  makeHeader();
+  makeHomeContent();
+  makeFooter();
+});
+
+homeBtn.addEventListener("click", () => {
+  makeHeader();
+  makeHomeContent();
+  makeFooter();
+});
 
 console.log("Hello");
